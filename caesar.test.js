@@ -29,6 +29,10 @@ test('y, multiple shifts', () => {
   expect(caesarCipher('y', 25)).toBe('x');
 });
 
+test('Large shift number', () => {
+  expect(caesarCipher('y', 52)).toBe('y');
+});
+
 test('two letter words, multiple shifts', () => {
   expect(caesarCipher('ab', 1)).toBe('bc');
   expect(caesarCipher('bc', 1)).toBe('cd');
